@@ -10,7 +10,6 @@ import { AdminService } from 'src/app/Services/admin.service';
 export class UpdateDoctorComponent {
   doctorId: number;
   email!: string;
-  password!: string;
   firstName!: string;
   lastName!: string;
   phoneNumber!: string;
@@ -26,7 +25,6 @@ export class UpdateDoctorComponent {
   onSubmit() {
     const doctorData = {
       email: this.email,
-      password: this.password,
       firstName: this.firstName,
       lastName: this.lastName,
       phoneNumber: this.phoneNumber,

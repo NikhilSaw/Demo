@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { DoctorModule } from './Routing/doctor/doctor.module';
 import { AdminModule } from './Routing/admin/admin.module';
+import { PatientModule } from './Routing/patient/patient.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -16,6 +17,7 @@ import { AdminModule } from './Routing/admin/admin.module';
     FormsModule,
     DoctorModule,
     AdminModule,
+    PatientModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

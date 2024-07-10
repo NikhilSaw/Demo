@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ConductConsultationComponent } from 'src/app/Components/doctor/conduct-consultation/conduct-consultation.component';
 import { GetAllConsultationsComponent } from 'src/app/Components/doctor/get-all-consultations/get-all-consultations.component';

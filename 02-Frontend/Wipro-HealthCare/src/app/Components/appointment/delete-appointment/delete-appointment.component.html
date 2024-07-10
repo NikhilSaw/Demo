@@ -1,0 +1,10 @@
+<div class="container mt-5">
+  <h2>Delete Appointment</h2>
+  <form (ngSubmit)="onSubmit()">
+    <div class="mb-3">
+      <label for="appointmentId" class="form-label">Appointment ID</label>
+      <input id="appointmentId" [(ngModel)]="appointmentId" name="appointmentId" class="form-control" type="number" required>
+    </div>
+    <button type="submit" class="btn btn-danger">Delete Appointment</button>
+  </form>
+</div>

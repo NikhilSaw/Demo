@@ -1,0 +1,31 @@
+<div class="container mt-5">
+    <h2>Book Appointment</h2>
+    <form [formGroup]="appointmentForm" (ngSubmit)="onSubmit()">
+      <div class="mb-3">
+        <label for="patientId" class="form-label">Patient ID</label>
+        <input id="patientId" formControlName="patientId" class="form-control" type="number">
+      </div>
+      <div class="mb-3">
+        <label for="doctorId" class="form-label">Doctor ID</label>
+        <input id="doctorId" formControlName="doctorId" class="form-control" type="number">
+      </div>
+      <div class="mb-3">
+        <label for="appointmentDate" class="form-label">Appointment Date</label>
+        <input id="appointmentDate" formControlName="appointmentDate" class="form-control" type="date">
+      </div>
+      <div class="mb-3">
+        <label for="appointmentTime" class="form-label">Appointment Time</label>
+        <input id="appointmentTime" formControlName="appointmentTime" class="form-control" type="time">
+      </div>
+      <div class="mb-3">
+        <label for="symptoms" class="form-label">Symptoms</label>
+        <input id="symptoms" formControlName="symptoms" class="form-control" type="text">
+      </div>
+      <div class="mb-3">
+        <label for="status" class="form-label">Status</label>
+        <input id="status" formControlName="status" class="form-control" type="text">
+      </div>
+      <button type="submit" class="btn btn-primary">Book Appointment</button>
+    </form>
+  </div>
+  

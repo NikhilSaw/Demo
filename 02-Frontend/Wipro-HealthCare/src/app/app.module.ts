@@ -7,6 +7,7 @@ import { AppComponent } from './app.component';
 import { DoctorModule } from './Routing/doctor/doctor.module';
 import { AdminModule } from './Routing/admin/admin.module';
 import { PatientModule } from './Routing/patient/patient.module';
+import { AppointmentModule } from './Routing/appointment/appointment.module';
 
 @NgModule({
   declarations: [AppComponent],
@@ -18,6 +19,7 @@ import { PatientModule } from './Routing/patient/patient.module';
     DoctorModule,
     AdminModule,
     PatientModule,
+    AppointmentModule
   ],
   providers: [],
   bootstrap: [AppComponent],

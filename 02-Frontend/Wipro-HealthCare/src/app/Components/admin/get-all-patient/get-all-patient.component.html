@@ -1,0 +1,37 @@
+<div class="container">
+    <h2 class="mt-4">All Doctors</h2>
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Patient ID</th>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Phone No</th>
+          <th>Gender</th>
+          <th>Date Of Birth</th>
+          <th>Address</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let patient of patients">
+          <td>{{ patient.patientId }}</td>
+          <td>{{ patient.firstName }} {{ patient.lastName }}</td>
+          <td>{{ patient.email }}</td>
+          <td>{{ patient.phoneNumber }}</td>
+          <td>{{ patient.gender }}</td>
+          <td>{{ patient.dateOfBirth }}</td>
+          <td>{{ patient.address}}</td>
+          <td>
+            <button
+              class="btn btn-danger"
+              (click)="deletePatient(patient.patientId)"
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

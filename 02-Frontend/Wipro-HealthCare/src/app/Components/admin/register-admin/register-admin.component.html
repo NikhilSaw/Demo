@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <h2>Register Admin</h2>
+  <form (ngSubmit)="registerAdmin()">
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" id="email" class="form-control" [(ngModel)]="admin.email" name="email" required />
+    </div>
+    <div class="form-group">
+      <label for="password">Password</label>
+      <input type="password" id="password" class="form-control" [(ngModel)]="admin.password" name="password" required />
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Register</button>
+  </form>
+</div>
